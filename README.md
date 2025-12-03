@@ -1,2 +1,10 @@
 # Sistema-de-cancelaci-n-de-ondas-de-radar.
 Este proyecto busca detectar ondas de radar mediante una placa metálica sensorizada, analizar su dirección, frecuencia y fase, y generar una señal electromagnética opuesta para intentar reducir la reflexión que regresa al emisor.
+
+## Teoría.
+La cancelación activa de ruido (ANC) utilizada en audífonos modernos consiste en registrar el ruido ambiente mediante micrófonos y generar una onda de igual frecuencia pero en fase opuesta, produciendo interferencia destructiva. Este proyecto explora si este principio puede estudiarse en el dominio electromagnético, específicamente frente a señales de radar. Un radar opera emitiendo ondas electromagnéticas que se propagan en el entorno, inciden sobre un objeto y retornan a la antena emisora. A partir del eco reflejado, se realizan cálculos de tiempo de vuelo, fase y amplitud para determinar la posición y características del objetivo. El interés del proyecto reside en analizar cómo una superficie metálica responde a la excitación electromagnética incidente y si esa información puede emplearse para sintetizar una señal opuesta capaz de modificar la reflexión.
+
+## Funcionamiento.
+El sistema propuesto emplea una placa metálica instrumentada con sensores distribuidos que detectan la excitación generada por la onda de radar al incidir sobre la superficie. Cada sensor registra variaciones eléctricas que permiten determinar diferencias temporales y de intensidad entre puntos de la placa. A partir de estos datos, un módulo de procesamiento estima la dirección, frecuencia y fase de la onda incidente. Con esta información, un emisor electromagnético móvil, desplazado mediante un mecanismo de cuerdas o guía mecánica, se orienta hacia la fuente del radar. Dicho emisor genera una contraseñal con parámetros ajustados para producir interferencia destructiva con el eco reflejado, permitiendo estudiar de manera práctica la viabilidad del concepto.
+
+<img width="489" height="523" alt="image" src="https://github.com/user-attachments/assets/5c036a36-0262-4e1c-987a-4a84510a2f77" />
